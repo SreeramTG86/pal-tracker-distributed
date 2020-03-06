@@ -158,14 +158,5 @@ public class FlowTest {
         response = httpClient.get(timesheetsServerUrl("/time-entries?userId=" + createdUserId));
         assertThat(findResponseId(response)).isEqualTo(createdTimeEntryId);
     }
-    public void startWithDatabaseName(String dbName) throws IOException, InterruptedException {
-        String dbUrl = "jdbc:mysql://localhost:3306/" + dbName + "?useSSL=false&useTimezone=true&serverTimezone=UTC&useLegacyDatetimeCode=false";
 
-        start(envMapBuilder()
-                .put("SPRING_DATASOURCE_URL", dbUrl)
-                .put("EUREKA_CLIENT_ENABLED", "false")
-                .put("RIBBON_EUREKA_ENABLED", "false")
-                .put("REGISTRATION_SERVER_RIBBON_LISTOFSERVERS", "http://localhost:8883")
-                .build());
-    }
 }
