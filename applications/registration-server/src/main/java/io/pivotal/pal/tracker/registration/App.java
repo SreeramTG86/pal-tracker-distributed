@@ -6,7 +6,9 @@ import org.springframework.context.annotation.ComponentScan;
 
 import java.util.TimeZone;
 
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
+@EnableWebSecurity
 @SpringBootApplication
 @ComponentScan({
     "io.pivotal.pal.tracker.accounts",
