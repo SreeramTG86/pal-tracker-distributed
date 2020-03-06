@@ -77,7 +77,7 @@ public class FlowTest {
     public void testBasicFlow() throws Exception {
         Response response;
 
-        response = httpClient.get(registrationServerUrl("/"));startWithDatabaseName
+        response = httpClient.get(registrationServerUrl("/"));
 
         assertThat(response.body).isEqualTo("Noop!");
 
