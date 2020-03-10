@@ -1,3 +1,4 @@
+/*
 package io.pivotal.pal.tracker.registration;
 
 import org.springframework.context.annotation.Configuration;
@@ -13,9 +14,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .anyRequest().permitAll()
+                .anyRequest().permitAll()RestConfig
                 .and()
                 .csrf().disable();
     }
 
-}
+}*/

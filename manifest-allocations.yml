@@ -5,8 +5,10 @@ applications:
   - route: allocations-pal-sreeramtg.cfapps.io
   memory: 1G
   instances: 1
-  env:   
+  env:
+    GRANT_TYPE: client_credentials
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
   services:
   - tracker-allocations-database
   - tracker-service-registry
+  - tracker-sso
