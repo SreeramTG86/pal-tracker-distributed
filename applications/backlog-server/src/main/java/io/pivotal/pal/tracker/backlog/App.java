@@ -19,7 +19,6 @@ import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 @EnableWebSecurity
 @EnableResourceServer
 @EnableOAuth2Client
-@EnableCircuitBreaker
 @EnableEurekaClient
 @SpringBootApplication
 @ComponentScan({"io.pivotal.pal.tracker.backlog", "io.pivotal.pal.tracker.restsupport"})
