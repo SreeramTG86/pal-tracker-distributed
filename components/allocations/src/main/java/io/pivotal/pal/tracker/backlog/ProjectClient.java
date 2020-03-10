@@ -7,6 +7,7 @@ import org.springframework.web.client.RestOperations;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import io.pivotal.pal.tracker.allocations.*;
 
 public class ProjectClient {
 
