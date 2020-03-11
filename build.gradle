@@ -29,6 +29,7 @@ buildscript {
     dependencies {
         classpath "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion"
         classpath "mysql:mysql-connector-java:$mysqlVersion"
+        classpath "io.spring.gradle:dependency-management-plugin:1.0.7.RELEASE"
     }
 }
 
