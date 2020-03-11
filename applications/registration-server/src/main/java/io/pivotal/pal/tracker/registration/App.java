@@ -9,6 +9,9 @@ import java.util.TimeZone;
 
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
+
+@EnableCircuitBreaker
 @EnableResourceServer
 @EnableEurekaClient
 @SpringBootApplication

@@ -16,6 +16,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableOAuth2Client;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 
+@EnableCircuitBreaker
 @EnableWebSecurity
 @EnableResourceServer
 @EnableOAuth2Client
